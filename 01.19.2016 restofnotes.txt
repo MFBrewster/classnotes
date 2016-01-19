@@ -7,3 +7,105 @@ Git work flow:
 
   staging and committing: staging is important because you want to be able to separate the things which are ready to commit
   from the things which are not ready yet
+
+  1. Initializing the git repo
+    - 'git init' which adds git files to the current directory
+      **Do not put git repos inside other git repositories**
+  2. create branch
+    - 'git branch <branch name>'
+    - 'git checkout' switches branches
+    - 'git checkout -b <branchname>' creates and branch and switches to it, all in one command
+  3. staging changes
+    - 'git add <filename>'
+    - to "unstage" a staged file:
+      - 'git reset <filename>'
+  4. commit changes
+    - 'git commit'
+      - when you type this without -m, it will open up a text editor and allow you to type longer messages
+      - default format - type a brief summary, hit enter twice, then give a more detailed message
+
+Github
+  1. forking a repository
+    - go to a repo you'd like to fork into your own github acct, and hit the "fork" button
+  2. cloning a repo
+    - 'git clone <repo url>'
+  3. make changes to a branch
+    - (see "create branch" and its subsequent notes, above)
+    - edit the files and save them, then commit the changes with a good message
+  4. push changes
+    - changing the URL of the remote repo: 'git remote set-url origin + the correct URL'
+    - 'git push origin <branch name>'
+  5. make a pull request
+    - after you have pushed changes, there is a button on github which says "create pull request"
+
+#JAVASCRIPT BASICS
+  1.  the 5 javascript primitives, with an example of each
+    - Number
+      > all js numbers are floating point numbers
+      > -0, NaN, Infinity are all numbers
+
+    - String
+      > '' (empty strings), non-empty strings
+
+    - Boolean
+      > true or false
+
+    - null        // both of these only
+      > null is a explicitly omitted value
+
+    - undefined   // have one possible value
+      > undefined is the default setting when something has not been defined
+
+  2. operators and what they do
+    - unary, binary, ternary
+      > unary has one operand, binary has two, ternary has three
+    - operator precedence determines the order in which operators are evaluated
+    - associativity determines the order of evaluation between operators with the same precedence
+    - increment and decrement operators assign their operand, ie they change the value of the variable increased or decreased
+
+  3. variables and values
+    - LITERALS: represents specific values in the source code (e.g. 'A string', 11, null)
+
+    - VARIABLES
+      > need to be defined
+      > hold values
+      > variables change values with assignment, and ONLY with assignment (equals sign or increment/decrement)
+
+    -EXPRESSIONS
+      > a combination of literals, variables, operators, function invocations and sub-expressions that are interpreted and produce a value.
+      > Not all such combinations produce a sensible result
+
+    - Node.js
+      > node is a repl script runner... REPL: R - read E - evaluate P - print L - Loop
+        + other repl's... repl.it, chrome console, safari console, firefox...
+
+    - ASSIGNMENT EXPRESSION
+      > assignment changes the value of a variable
+      > ONLY assignment changes the value of a variable
+
+    - CONSTANTS
+      > constants must be initialized (assigned a value) when created.
+        + Uninitialized constants are an error in firefox
+        + they are undefined in chrome and node
+      > attempting to change a value of a constant does... nothing
+
+    - NUMERIC EXPRESSIONS
+      > simple calculations (5 + 3, 7 - 2, 11 % 5, 11.5 % 5)
+        + they're simple
+      > expressions with values only change with assignment
+      > COUNTING
+        + 'i = 1 + 1' = 'i += 1' = '++i'
+        + i++ is not quite the same... returns original value of i, but increases the value of i by 1 after the expression is complete
+
+    - STRING EXPRESSIONS
+      > you can add strings with '+'
+         + that's called concatenating
+
+    - BOOLEAN EXPRESSIONS
+      > an expression which evaluates to a Boolean (ie true and false)
+        + '===', '<=' are Boolean expressions
+        + boolean expressions can be expanded using logical operators (|| = 'or', && = 'and')
+
+  4. evaluating simple javascript by inspection
+
+  5. simple scripts which use flow control
