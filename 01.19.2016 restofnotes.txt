@@ -1,0 +1,9 @@
+#GIT AND GITHUB
+Git work flow:
+  1. initialize git repo
+  2. create branch and do work on that branch (making changes)
+  3. stage changes (and take notes)
+  4. commit changes
+
+  staging and committing: staging is important because you want to be able to separate the things which are ready to commit
+  from the things which are not ready yet

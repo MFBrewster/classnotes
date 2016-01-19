@@ -1,0 +1,22 @@
+home directory represented by ~ or $HOME
+
+leading slash ("/") is the root directory
+
+pwd - prints working directory
+
+cd - changes directory
+
+ls - lists contents of working directory
+
+mkdir - creates new directory
+
+touch - creates a new file, or replaces the timestamp of an already-existing file
+
+rm - permanently deletes a file
+  to be used very carefully! particularly along with -f, which "forces" deletion
+  of a certain file regardless of permissions
+
+man <command name> - opens the manual for a certain command, allowing you to
+review what it is, what it can do, and what options can run with the command
+
+cat <file name> - review the contents of a file
