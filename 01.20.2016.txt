@@ -1,0 +1,51 @@
+1/20/2016
+
+Started with #JAVASCRIPT BASICS, which is on yesterday's notes
+
+Today's content covered in yesterday's notes:
+  1. Boolean Expressions
+    > truthy-falsy
+    > type conversion
+  2. Simple script using flow control
+    > if
+    > while
+    > for
+
+------------
+
+#JAVASCRIPT REFERENCE TYPES
+
+Identify array, object, and function literals
+  1. DICTIONARY -
+    > An object
+    > A collection
+    > An associative array (?)
+    > distinct (but analogous) from real-life word-definition dictionary
+  2. LIST
+    > Also a collection
+    > An array
+  3. FUNCTION
+    > Encapsulated executable code
+  4. EXAMPLES
+    > dictionary = {};
+    > list = [];
+    > func = function(){};
+  5. EACH REFERENCE HOLDS/STORES VALUES
+    > access functions using invocation syntax: func()
+    > access array using index syntax: list[0]
+    > access objects using member syntax: dictionary.name or dictionary['name']
+  6. REFERENCES ARE DISTINCT FROM PRIMITIVES
+    > References -on their own- do not have values, they only point ('refer') to something else
+
+Create and invoke functions with argument-dependent return values
+  1. Functions store code which may be invoked throughout a program
+  2. Allows you to take code which might be used many time, and only write it once
+  3. PARAMETERS are the names you use when you define a function
+  4. ARGUMENTS are the variables/values which you pass into the functions
+
+Store, access, and update data values in objects and arrays
+  1. Collections come in two types: arrays and objects
+  2. arrays store list of things
+  3. objects store dictionaries, ie strings which are associated with definitions or values
+
+Iterate through an array or object and operate on its elements

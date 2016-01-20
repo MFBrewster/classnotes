@@ -29,6 +29,7 @@ Github
     - go to a repo you'd like to fork into your own github acct, and hit the "fork" button
   2. cloning a repo
     - 'git clone <repo url>'
+      > get the url from the dialog box on github (SSH format, for now)
   3. make changes to a branch
     - (see "create branch" and its subsequent notes, above)
     - edit the files and save them, then commit the changes with a good message
@@ -50,10 +51,10 @@ Github
     - Boolean
       > true or false
 
-    - null        // both of these only
+    - null        // both of these only ...
       > null is a explicitly omitted value
 
-    - undefined   // have one possible value
+    - undefined   // ...have one possible value
       > undefined is the default setting when something has not been defined
 
   2. operators and what they do
@@ -105,7 +106,24 @@ Github
       > an expression which evaluates to a Boolean (ie true and false)
         + '===', '<=' are Boolean expressions
         + boolean expressions can be expanded using logical operators (|| = 'or', && = 'and')
+      > && evaluates before ||
+        + `statement && statment || statement && statement` is a very common expression
+      > Truthy and Falsy statements
+        + There are a bunch of things that are falsy, and everything else is truthy
+          * Falsy: NaN, null, '' and "" (empty strings), 0 and -0, undefined........ and false
+          * Truthy... everything else. !falsy
+      > Type Conversions
+        + '+' operator attempt to convert its operand into a number... if unsuccesful the result is NaN
+        + if either thing on the side of a + is a string, the whole is converted to a string
+           * 3 + 5 + 'times' = '8times'... 'times' + 3 + 5 = 'times35'
+        + false = 0, true = 1 for non-strict equality comparisons with numbers
 
   4. evaluating simple javascript by inspection
 
   5. simple scripts which use flow control
+    - THE IF STATEMENT
+      > Runs code between brackets  if the condition evaluates to true
+    - THE WHILE LOOP
+      > Runs code between brackets again and again until the condition evaluates to true
+    - THE FOR LOOP
+      > Sets up counter conditions, then executes code within brackets while the counter runs
