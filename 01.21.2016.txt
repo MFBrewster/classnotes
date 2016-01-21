@@ -1,0 +1,44 @@
+1/21/2016
+
+#Modeling
+
+MODELING REAL WORLD ENTITIES
+  1. Abstraction and Modeling
+    - the world is complex, many things are complex
+    - instead of dealing with the raw complexity of all of the information in
+      the world, instead we ABSTRACT that information in order to simplify it
+      and make it easier to work with
+
+  2. How Abstraction and Modeling Helps Developers
+    - Simplify data in order to make it more clear and readable
+    - writing efficient code which abstracts repeated code out into functions
+    - considering problems in the abstract, in English, before writing code
+
+  3. The way you abstract complex information will depend upon the problem
+     you're trying to solve
+     - context is important
+
+  4. Modeling in Javascript
+     - Models can be as simple as a single number (weather abstracted to temp),
+       or are often abstracted into arrays
+       > lists of similar items, indexes enough to distinguish them
+
+IMPLEMENT THESE MODELS WITH OBJECTS
+     - However, most often, the thing modeled has multiple attributes
+       > Therefor, OBJECTS ARE USUALLY THE BEST CHOICE FOR MODELING REAL
+         WORLD ATTRIBUTES
+     - In addition to normal data types, OBJECTS CAN HAVE FUNCTIONS AS PROPERTIES
+       > Having a function as the property of an object is called a 'method'
+       > This is great... you can write your own methods into objects. I'm amazed.
+
+See practicejs.js and recipe.js for examples of modeling real-life stuff
+---
+
+# THIS
+From within a method, referencing properties of the same object
+
+1. Self-referential objects
+  - When you're coding within an object, you can refer to the object using the `this` keyword
+  - the idea of object-oriented programming is to encapsulate data and behavior,
+    and `this` gives us a way to refer to that data within an object
+    - 
