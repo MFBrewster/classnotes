@@ -1,0 +1,34 @@
+#JS OBJECTS: CONSTRUCTORS
+
+Objective: to attach attributes to a new object using the constructor function
+
+  - Constructor: an "object factory" which makes objects of a particular
+     similar type
+  - CONVENTIONS:
+      1. always start constructor name with a captial letter
+        > const Hero = function(name, alias){ }
+      2. always used with the `new` keyword
+  -  Invocation of constructor:
+    >  let batman = new Hero('Bruce Wayne', 'The Bat-Man');
+  - the `new` keyword
+    1. creates a new empty object
+    2. attaches the constructor to the object as a property
+    3. invokes the constructor function on the new object
+    4. returns the object
+  - a new object created by a constructor is often refferred to as an 'instance'
+
+#JS OBJECTS: PROTOTYPES
+
+Objective: to attach methods to custom objects by using a prototype
+
+  - when we attach methods directly to objects (singleton methods),
+    we are attaching a unique method that will only work with a single object
+* - A PROTOTYPE is an object, which contains methods which can be attached to
+    constructor functions
+      > trying to act on a NON-EXISTENT method within a constructor causes
+        javascript to look for prototypes of that method elsewhere in the code
+        + method lookup using prototype chain
+      > syntax: `constructorName.prototype.methodName = function {...};`
+        + put on the global object at the same level as the constructor
+        + constructorName.__proto returns prototypes attached to constructor
+      > 

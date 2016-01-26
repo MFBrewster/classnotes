@@ -1,0 +1,83 @@
+FROM YESTERDAY'S NOTES
+---------------------
+ARRAY METHODS
+    - forEach() - executes a given function on each array element
+      > ex. arrayName.forEach(timesTwo (x) { return x * 2; })
+    - .forEach() functions takes as its arguments: element of each array index,
+      index of each array element, and the whole array
+    - maps() - runs a function on eacharray element and returns the new array
+---------------------
+
+ARRAY METHODS (continued)
+  - reduce() - runs every array element through a function and returns
+    a single value (the result of an implied accumulator)
+    > ex: [2, 7, 11].reduce( (prev, curr) => prev * curr);
+      returns 154...
+    > The value in the PREV position in the ex above is the accumulator
+    > its value changes as the function is called on each array value,
+      and it is the value which will eventually be returned
+    > PREV starts off as either the initial value (then curr equals array[0]) (see MDN),
+      or the first element of the area (curr = array[1]) (again, clearer on MDN)
+    >
+
+---------- !!! -----------
+HTML AND CSS
+
+  - What is the web?
+    > The web is distinct from the internet. It's powered by and built on top of the internet
+    > the internet is a telecommunications network; the web is a service provided by the internet
+    > a web developer USES the internet in order to run applications
+  - A service requires two parties: a server and a client
+    > the client is the browser - it requests webpages and renders the page for the user
+      + a webpage is a document composed of HTML, CSS, and JS
+
+HTML
+  - HTML defines the structure and content of information on the page
+  - All HTML pages have the same basic structure <html><head></head><body></body></html>
+  - tags are typically paired, between opening and closing tags
+  - there are typically two kinds of HTML elements: block and inline
+    > block values have automatic line breaks and stack verticallly
+    > typically block elements relate to space on the page, while inline elements
+      relate to text
+  - semantic tags: its name indicates its meaning (eg section, nav, article)
+
+CSS
+  - styling rules which apply to several elements all at once
+  - helpful if you have a separate style sheet which applies to several pages,
+    changes to one file will affect all associated files in one fell swoop
+  - styling which conflicts with other styling tags are resolved using a
+    calculation of SPECIFICITY
+    > the more specific a styling tag, the higher-preference it is in resolving conflicts
+  - If two styling tags have the same specificity, an effect called CASCADING resolves
+    the conflict
+    > the LATER-given instruction wins (lower in the file)
+
+CSS POSITIONING
+  - Dimensions/Content properties:
+    > padding: background area around the content
+    > border: frame around the background
+    > margin: distance between border and other elements on the page
+  - Float and Clear
+    > floated elements behave like inline text, they go from either right to left
+      or left to right, wrapping underneath each line in rows as the browser width
+      contracts or expands
+    > clear creates a "line break" after the last floated element and moves down
+      to the next line
+
+ADVANCED CSS POSITIONING
+  - Media Queries
+    > allows you to show or hide CSS based on conditions of the browser
+    >   @media (condition)  {
+          selector  {
+            property: value;
+            otherprop: value;
+          }
+        }
+    > cascading still applies
+    > random note: using min-width rather than max-width considered best practice
+      + code for mobile first, then add css styling as screen gets bigger
+  - Static vs. fixed positioning
+    > ordinarily, things scroll up and down as the browser scrolls up and down
+    > a fixed position element is fixed to a position in the view window
+      + it DOES NOT SCROLL UP AND DOWN
+    > 
